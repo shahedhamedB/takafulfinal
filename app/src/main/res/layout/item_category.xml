@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <import type="android.content.Context" />
+        <variable
+            name="model"
+            type="com.moub.perday.model.CategoryData" />
+
+        <variable
+            name="viewModel"
+            type="com.moub.perday.ui.employee.donation.DonationViewModel" />
+        <variable
+            name="fragment"
+            type="com.moub.perday.ui.employee.donation.DonationFragment" />
+
+    </data>
+    <androidx.cardview.widget.CardView
+
+      android:orientation="vertical"
+        android:layout_width="@dimen/_150sdp"
+        android:layout_height="@dimen/_120sdp"
+        android:id="@+id/media_card_view"
+        card_view:cardCornerRadius="@dimen/_7sdp"
+        android:clickable="true"
+        android:focusable="true"
+        card_view:cardBackgroundColor="@android:color/white"
+        card_view:cardElevation="@dimen/_3sdp"
+        android:layout_margin="5dp"
+
+
+
+        >
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            card_view:layout_constraintStart_toStartOf="parent"
+            card_view:layout_constraintTop_toTopOf="parent"
+            card_view:srcCompat="@drawable/purble_item" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:textSize="@dimen/_10sdp"
+            android:textColor="@color/white"
+            android:text="تبرع"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:layout_marginEnd="@dimen/_3sdp"
+
+            android:layout_marginBottom="@dimen/_3sdp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+
+
+                android:layout_width="@dimen/_50sdp"
+                android:layout_height="@dimen/_50sdp"
+                android:id="@+id/image_category"
+                loadCompanyImage="@{model.image}"
+                android:layout_marginEnd="49dp"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toStartOf="@+id/name_category"
+                card_view:layout_constraintHorizontal_bias="0.0"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent"
+                tools:background="@drawable/ic_dell"
+                tools:ignore="MissingConstraints"
+                tools:src="@drawable/ic_dell" />
+
+            <TextView
+                android:id="@+id/name_category"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_marginEnd="4dp"
+                android:hint="name"
+                android:text="@{model.name}"
+
+                android:textAlignment="viewStart"
+                android:textColor="@color/primary_dark"
+                android:textSize="@dimen/_11ssp"
+                android:textStyle="bold"
+                card_view:layout_constraintBottom_toBottomOf="parent"
+                card_view:layout_constraintEnd_toEndOf="parent"
+                card_view:layout_constraintHorizontal_bias="0.5"
+                card_view:layout_constraintStart_toStartOf="parent"
+                card_view:layout_constraintTop_toTopOf="parent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</layout>

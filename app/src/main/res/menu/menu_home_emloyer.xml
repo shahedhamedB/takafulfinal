@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home3"
+        android:icon="@drawable/ic_icon_material_home"
+        android:title="Home"
+        />
+
+    <item
+        android:id="@+id/PostFragment"
+        android:icon="@drawable/new_applied"
+        android:title="Posts"
+        />
+
+    <item
+        android:id="@+id/publicEmployer"
+        android:icon="@drawable/ic_public"
+        android:title="@string/social_public"
+        />
+ <item
+        android:id="@+id/applicants"
+        android:icon="@drawable/ic_hat"
+        android:title="Applicants"
+        />
+    <item
+        android:id="@+id/settingsEmployer"
+        android:icon="@drawable/ic_icon_feather_settings"
+        android:title="@string/settings" />
+
+
+</menu>

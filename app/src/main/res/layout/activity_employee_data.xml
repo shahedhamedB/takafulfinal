@@ -1,0 +1,595 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.employee.employeePersonalInfo.EmployeeDataActivity">
+
+
+    <TextView
+        android:id="@+id/skipBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_250sdp"
+        android:layout_marginLeft="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_marginEnd="@dimen/_1sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:text="@string/skip"
+        android:textColor="#AAAAAA"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="RtlHardcoded" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_128sdp"
+        android:layout_marginLeft="@dimen/_128sdp"
+        android:layout_marginTop="@dimen/_54sdp"
+        android:layout_marginEnd="@dimen/_128sdp"
+        android:layout_marginRight="@dimen/_128sdp"
+        android:text="@string/personal_info"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:text="@string/fill_your_general_contact_information"
+        app:layout_constraintEnd_toEndOf="@+id/textView13"
+        app:layout_constraintStart_toStartOf="@+id/textView13"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginLeft="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginRight="@dimen/_8sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/maretalStatus"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/gray"
+                    android:theme="@style/MatchSpinnerTheme"
+                    app:layout_constraintEnd_toEndOf="@+id/textView20"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView20"
+                    app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+                <Spinner
+                    android:id="@+id/familySizeSpinner"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/gray"
+                    android:theme="@style/MatchSpinnerTheme"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/textView22"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView22"
+                    app:layout_constraintTop_toBottomOf="@+id/textView22" />
+
+                <Spinner
+                    android:id="@+id/helthConditionsSpinner"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:background="@color/gray"
+                    android:theme="@style/MatchSpinnerTheme"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/textView21"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView21"
+                    app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+                <Spinner
+                    android:id="@+id/familyJob"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@color/gray"
+                    android:theme="@style/MatchSpinnerTheme"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/textView25"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView25"
+                    app:layout_constraintTop_toBottomOf="@+id/textView25" />
+
+                <Spinner
+                    android:id="@+id/LanguageSpinner"
+                    style="@style/mySpinnerItemStyle"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/gray"
+                    android:theme="@style/MatchSpinnerTheme"
+                    app:layout_constraintEnd_toEndOf="@+id/textView15"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView15"
+                    app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/language"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                <TextView
+                    android:id="@+id/textView19"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginLeft="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_250sdp"
+                    android:layout_marginRight="@dimen/_250sdp"
+                    android:text="@string/location"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_26sdp"
+                    android:layout_marginRight="@dimen/_256sdp"
+                    android:background="@color/gray"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/_5sdp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:paddingLeft="@dimen/_10sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView19"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView19"
+                    app:layout_constraintTop_toBottomOf="@+id/textView19"
+                    tools:ignore="RtlSymmetry">
+
+                    <TextView
+                        android:id="@+id/txtLong"
+                        android:layout_width="@dimen/_230sdp"
+                        android:layout_height="@dimen/_15sdp"
+                        android:text="@string/current_location"
+                        android:textColor="@color/md_red_900"
+                        android:textSize="@dimen/_10ssp" />
+
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/getCurrentLocationBtn"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout2"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                    app:layout_constraintTop_toTopOf="@+id/linearLayout2"
+                    app:srcCompat="@drawable/current_location"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/path"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/maretalStatus"
+                    app:layout_constraintEnd_toEndOf="@+id/maretalStatus"
+                    app:layout_constraintTop_toTopOf="@+id/maretalStatus"
+                    app:srcCompat="@drawable/path"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/path2"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/LanguageSpinner"
+                    app:layout_constraintEnd_toEndOf="@+id/LanguageSpinner"
+                    app:layout_constraintTop_toTopOf="@+id/LanguageSpinner"
+                    app:srcCompat="@drawable/path"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/path3"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/helthConditionsSpinner"
+                    app:layout_constraintEnd_toEndOf="@+id/helthConditionsSpinner"
+                    app:layout_constraintTop_toTopOf="@+id/helthConditionsSpinner"
+                    app:srcCompat="@drawable/path"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/path4"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/familySizeSpinner"
+                    app:layout_constraintEnd_toEndOf="@+id/familySizeSpinner"
+                    app:layout_constraintTop_toTopOf="@+id/familySizeSpinner"
+                    app:srcCompat="@drawable/path"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/path5"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="@+id/familyJob"
+                    app:layout_constraintEnd_toEndOf="@+id/familyJob"
+                    app:layout_constraintTop_toTopOf="@+id/familyJob"
+                    app:srcCompat="@drawable/path"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="65dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="@string/gender"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="@+id/LanguageSpinner"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/LanguageSpinner"
+                    app:layout_constraintTop_toBottomOf="@+id/LanguageSpinner" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/radioGroup"
+                    app:layout_constraintTop_toBottomOf="@+id/textView30">
+
+                    <Spinner
+                        android:id="@+id/yearSpinner"
+                        android:layout_width="@dimen/_100sdp"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/MatchSpinnerTheme" />
+
+                    <Spinner
+                        android:id="@+id/monthSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/MatchSpinnerTheme" />
+
+                    <Spinner
+                        android:id="@+id/daysSpinner"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:theme="@style/MatchSpinnerTheme" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView20"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="@dimen/_50sdp"
+                    android:layout_marginEnd="278dp"
+                    android:layout_marginRight="278dp"
+                    android:text="@string/maretal_status"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+                <TextView
+                    android:id="@+id/textView21"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_12sdp"
+                    android:text="@string/health_condition"
+                    android:textColor="@color/blue"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/maretalStatus"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/maretalStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/maretalStatus" />
+
+                <TextView
+                    android:id="@+id/textView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="@string/family_size"
+                    android:textColor="@color/blue"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/helthConditionsSpinner"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/helthConditionsSpinner"
+                    app:layout_constraintTop_toBottomOf="@+id/helthConditionsSpinner" />
+
+                <TextView
+                    android:id="@+id/textView25"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:text="How many persons in your family has \npermenent job ?"
+                    android:textColor="@color/blue"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/familySizeSpinner"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/familySizeSpinner"
+                    app:layout_constraintTop_toBottomOf="@+id/familySizeSpinner" />
+
+                <TextView
+                    android:id="@+id/textView26"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9sdp"
+                    android:text="socioeconomic level of vulnerability \nand need"
+                    android:textColor="@color/blue"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/familyJob"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/familyJob"
+                    app:layout_constraintTop_toBottomOf="@+id/familyJob" />
+
+                <RadioGroup
+                    android:id="@+id/radioGroup"
+                    android:layout_width="@dimen/_226sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="12dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/textView16"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView16"
+                    app:layout_constraintTop_toBottomOf="@+id/textView16"
+                    tools:ignore="MissingConstraints">
+
+                    <RadioButton
+                        android:id="@+id/radioButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteX="157dp"
+                        tools:layout_editor_absoluteY="267dp" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:text="@string/male"
+                        android:textColor="@color/blue"
+                        tools:ignore="RtlHardcoded"
+                        tools:layout_editor_absoluteY="267dp" />
+
+
+                </RadioGroup>
+
+                <ProgressBar
+                    android:id="@+id/progressBar2"
+                    style="?android:attr/progressBarStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginLeft="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_100sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <RadioGroup
+                    android:layout_width="@dimen/_150sdp"
+                    android:layout_height="@dimen/_150sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="@+id/textView26"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView26"
+                    app:layout_constraintTop_toBottomOf="@+id/textView26">
+
+                    <CheckBox
+                        android:id="@+id/radioButton3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:text="@string/child_headed_households"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteY="267dp" />
+
+                    <CheckBox
+                        android:id="@+id/radioButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:text="@string/women_headed_households"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteY="267dp" />
+
+                    <CheckBox
+                        android:id="@+id/radioButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:text="@string/chronically_ill"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteY="267dp" />
+
+                    <CheckBox
+                        android:id="@+id/radioButton6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_25sdp"
+                        android:layout_marginLeft="@dimen/_25sdp"
+                        android:text="@string/family_with_elderly_or_person_s_with_disabilities"
+                        android:textColor="@color/blue"
+                        tools:layout_editor_absoluteY="267dp" />
+
+                </RadioGroup>
+
+                <EditText
+                    android:id="@+id/editText"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="20dp"
+                    android:background="@color/gray"
+                    android:digits="0123456789"
+                    android:ems="10"
+                    android:hint="phone number"
+                    android:inputType="phone"
+                    android:maxLength="9"
+                    android:paddingStart="@dimen/_40sdp"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/LanguageSpinner"
+                    app:layout_constraintStart_toStartOf="@+id/LanguageSpinner"
+                    app:layout_constraintTop_toBottomOf="@+id/LanguageSpinner" />
+
+                <TextView
+                    android:id="@+id/textView38"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginLeft="15dp"
+                    android:text="+962"
+                    android:textColor="@color/blue"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@+id/editText"
+                    app:layout_constraintStart_toStartOf="@+id/editText"
+                    app:layout_constraintTop_toTopOf="@+id/editText" />
+
+                <TextView
+                    android:id="@+id/textView30"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Birthday"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="@+id/radioGroup"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/radioGroup"
+                    app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+                <TextView
+                    android:id="@+id/textView71"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="Specialization"
+                    app:layout_constraintEnd_toEndOf="@+id/maretalStatus"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/maretalStatus"
+                    app:layout_constraintTop_toBottomOf="@+id/maretalStatus" />
+
+                <EditText
+                    android:id="@+id/Specialization"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_marginTop="32dp"
+                    android:layout_marginEnd="16dp"
+                    android:ems="10"
+                    android:background="@color/gray"
+                    android:inputType="textPersonName"
+                    android:hint="Specialization"
+                    android:textSize="@dimen/_10ssp"
+                    android:paddingStart="@dimen/_10sdp"
+                    android:textColorHint="#686868"
+                    app:layout_constraintEnd_toEndOf="@+id/textView71"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView71"
+                    app:layout_constraintTop_toBottomOf="@+id/maretalStatus" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/nextBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_250sdp"
+        android:layout_marginLeft="@dimen/_250sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="@dimen/_16sdp"
+        android:layout_marginRight="@dimen/_16sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
+        android:text="@string/next"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scrollView2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

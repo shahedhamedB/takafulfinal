@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_marginTop="@dimen/_5sdp"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_300sdp"
+            android:layout_marginStart="@dimen/_7sdp"
+            android:layout_height="wrap_content">
+        <TextView
+                android:text="Question asked to the employee ?"
+                android:textStyle="bold"
+                android:id="@+id/QuestionTxt"
+                android:textColor="@color/blue"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_width="@dimen/_250sdp"
+                android:layout_height="@dimen/_30sdp" />
+        <TextView
+                android:text="00/00/0000 00:00:00 am"
+                android:textStyle="bold"
+                android:id="@+id/Time"
+                android:textSize="@dimen/_8ssp"
+                android:layout_marginTop="@dimen/_65sdp"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+        <TextView
+                android:text="Ahmad Alqaisi"
+                android:textStyle="bold"
+                android:id="@+id/EmployeeName"
+                android:layout_marginTop="@dimen/_50sdp"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        <TextView
+                android:layout_marginTop="@dimen/_90sdp"
+                android:layout_marginStart="@dimen/_60sdp"
+                android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text "
+                android:layout_width="@dimen/_220sdp"
+                android:maxLength="131"
+                android:layout_height="wrap_content"  android:id="@+id/Answer"/>
+
+        <View android:layout_width="@dimen/_220sdp" android:layout_height="@dimen/_1sdp"
+              android:layout_marginTop="@dimen/_155sdp"
+              android:layout_marginBottom="@dimen/_10sdp"
+              android:background="@color/gray"
+              android:layout_marginStart="@dimen/_40sdp"/>
+        <ImageView
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_50sdp"
+                app:srcCompat="@drawable/ic_user" android:id="@+id/imageView2"/>
+        <ImageView
+                android:layout_width="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginStart="@dimen/_270sdp"
+                android:layout_height="@dimen/_20sdp"
+                app:srcCompat="@drawable/points"
+                android:id="@+id/imageView20"
+        />
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".TestActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+            android:layout_height="54dp"
+            android:layout_width="match_parent"
+            android:background="@drawable/rectangle"
+            android:theme="@style/AppTheme.AppBarOverlay">
+        <androidx.constraintlayout.widget.ConstraintLayout android:layout_width="match_parent"
+                                                           android:layout_height="@dimen/_40sdp">
+
+            <ImageView
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_15sdp"
+                    android:background="@drawable/setting"
+                    android:id="@+id/imageView4"
+                    app:layout_constraintTop_toTopOf="@+id/toolbar" android:layout_marginBottom="8dp"
+                    app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="20dp"/>
+
+
+            <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/toolbar"
+                    android:gravity="start"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_40sdp"
+                    app:popupTheme="@style/AppTheme.PopupOverlay" app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent" app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent">
+
+
+                     </androidx.appcompat.widget.Toolbar>
+            <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/noti_btn" android:id="@+id/notiMain"
+                    app:layout_constraintTop_toTopOf="@+id/toolbar"
+                    app:layout_constraintBottom_toBottomOf="@+id/toolbar"
+                    app:layout_constraintEnd_toEndOf="@+id/toolbar" android:layout_marginEnd="@dimen/_25sdp"
+            />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <include layout="@layout/content_test"/>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

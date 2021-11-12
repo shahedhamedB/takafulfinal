@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:background="@color/home_background"
+              android:layout_height="match_parent">
+    <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+    >
+
+
+    </ImageView>
+
+
+    <ScrollView
+
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="@dimen/_305sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_6sdp"
+            android:layout_marginEnd="@dimen/_6sdp"
+            android:layout_marginTop="@dimen/_6sdp"
+            android:background="#FFF">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+            <com.events.calendar.views.EventsCalendar
+                    android:id="@+id/eventsCalendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#fff"
+                    android:overScrollMode="never"
+                    app:eventDotColor="#ff0000"
+                    app:isBoldTextOnSelectionEnabled="true"
+                    app:monthTitleColor="@color/blue"
+                    app:primaryTextColor="#51A9A8"
+                    app:secondaryTextColor="#666666"
+                    app:selectedTextColor="#FFF"
+                    app:selectionColor="#51A9A8"
+                    app:weekHeaderColor="#c6c6c6"
+                    app:rangeSelectionColor="#51A9A8"
+                    app:rangeSelectionStartColor="#51A9A8"
+                    app:rangeSelectionEndColor="#51A9A8"/>
+
+            <TextView
+                    android:id="@+id/selected"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="end"
+                    android:paddingBottom="10dp"
+                    android:paddingEnd="15dp"
+                    android:paddingStart="15dp"
+                    android:paddingTop="5dp"
+                    android:textColor="#ffffff"
+                    android:textSize="16sp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+    <TextView
+            android:text="@string/the_business_that_you_have_in"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:id="@+id/textView49"/>
+    <TextView
+            android:text="TextView"
+            android:textSize="@dimen/_12ssp"
+            android:textStyle="bold"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView"
+            android:layout_marginLeft="30dp" tools:ignore="RtlHardcoded"/>
+    <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" tools:listitem="@layout/list_donation_detail"/>
+
+</LinearLayout>

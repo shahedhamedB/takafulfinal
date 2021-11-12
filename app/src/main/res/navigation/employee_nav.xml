@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/employee_nav"
+    app:startDestination="@id/home2">
+
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.moub.perday.ui.employee.donation.DonationFragment"
+        tools:layout="@layout/fragment_donation"
+        android:label="Home" />
+    <fragment
+        android:id="@+id/applied"
+        android:name="com.moub.perday.ui.employee.applied.AppliedFragment"
+        android:label="Applied"
+        tools:layout="@layout/fragment_applied"/>
+    <fragment
+        android:id="@+id/jobsSubmitted"
+        android:name="com.moub.perday.ui.employee.recentlyJob.newJobs.JobsSubmitted"
+        android:label="fragment_jobs_submitted"
+        tools:layout="@layout/fragment_jobs_submitted" />
+    <fragment
+        android:id="@+id/settingsEmployee"
+        android:name="com.moub.perday.ui.employee.settings.SettingsEmployee"
+        android:label="settings_employee_fragment"
+        tools:layout="@layout/settings_employee_fragment" />
+    <fragment
+        android:id="@+id/public1"
+        android:name="com.moub.perday.ui.employee.publicEmployers.Public"
+        tools:layout="@layout/public_fragment"
+        android:label="Public" />
+</navigation>

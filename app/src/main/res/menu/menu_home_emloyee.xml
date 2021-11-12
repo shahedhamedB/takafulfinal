@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home2"
+        android:icon="@drawable/ic_icon_material_home"
+        android:title="التبرعات"
+        />
+
+    <item
+        android:id="@+id/applied"
+        android:icon="@drawable/new_applied"
+        android:title="الطلبات"
+        />
+
+    <item
+        android:id="@+id/public1"
+        android:icon="@drawable/ic_public"
+        android:title="الجمعيات"
+        />
+
+    <item
+        android:id="@+id/settingsEmployee"
+        android:icon="@drawable/ic_icon_feather_settings"
+        android:title="اخرى" />
+
+
+</menu>

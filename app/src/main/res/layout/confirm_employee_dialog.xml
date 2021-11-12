@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="@dimen/_290sdp"
+            android:gravity="center"
+            android:background="@color/White"
+            android:layout_height="@dimen/_130sdp" tools:layout_editor_absoluteY="0dp"
+            tools:layout_editor_absoluteX="0dp" tools:ignore="MissingConstraints">
+        <TextView
+                android:text="Are you sure you choose this employee ?"
+                android:textSize="@dimen/_14ssp"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView10"/>
+        <TextView
+                android:text="@string/this_is_the_approval_of_the_terms_and_conditions"
+                android:textSize="@dimen/_7ssp"
+                android:textColor="@color/blue"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:id="@+id/textView6"/>
+        <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+            <Button
+                    android:text="Cancel"
+                    android:textColor="#fff"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="@dimen/_120sdp"
+                    android:background="@drawable/blue_button"
+                    android:layout_height="wrap_content" android:id="@+id/cancelBtn2"/>
+            <Button
+                    android:text="Confirm"
+                    android:textColor="#fff"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_20sdp"
+                    android:layout_width="@dimen/_120sdp"
+                    android:background="@drawable/blue_button"
+                    android:layout_height="wrap_content" android:id="@+id/confirmBtn2"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.employer.postJobsData.PostJobsData">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="@dimen/_230sdp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_30sdp"
+        android:layout_marginTop="@dimen/_40sdp"
+        android:text="@string/look_for_the_right_candidates_without_reviewing_many_requests_by_filling_in_the_information"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_14ssp" />
+
+    <ProgressBar
+        android:id="@+id/progressBarPostJob"
+        style="@style/Widget.AppCompat.ProgressBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ProgressBarStyle"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/EmployeePhoto"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/edit_text_forget_password"
+                android:ems="10"
+                android:hint="@string/job_title"
+                android:inputType="textPersonName"
+                android:maxLength="14"
+                android:paddingStart="@dimen/_7sdp"
+                android:textSize="@dimen/_10ssp" />
+
+            <EditText
+                android:id="@+id/numberOfWorkers"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ems="10"
+                android:hint="@string/number_of_workers"
+                android:inputType="number"
+                android:maxLength="3"
+                android:textSize="@dimen/_10ssp"
+                tools:ignore="TextFields" />
+
+            <Spinner
+                android:id="@+id/locationSpinner"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <TextView
+                android:id="@+id/locationTxt"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="TextView"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_10ssp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <Spinner
+                android:id="@+id/educationalLevel"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text="Working time :"
+                android:textColor="@color/blue"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="Work date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/dateWork"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:drawableLeft="@drawable/ic_date_range_black_24dp"
+                android:drawablePadding="@dimen/_5sdp"
+                android:drawableTint="@color/blue"
+                android:paddingEnd="@dimen/_20sdp"
+                android:text="00/00/0000" />
+
+            <TextView
+                android:id="@+id/textView17"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="The number of working days" />
+
+            <EditText
+                android:id="@+id/numOfDayWork"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:background="@drawable/edit_text_forget_password"
+                android:ems="10"
+                android:hint="Number of Days"
+                android:inputType="number"
+                android:maxLength="14"
+                android:paddingStart="@dimen/_7sdp"
+                android:textSize="@dimen/_10ssp" />
+            <Spinner
+                android:id="@+id/perWeekSpinner"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+
+                android:layout_marginTop="@dimen/_5sdp"
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <EditText
+                android:id="@+id/perWeekSelect"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ems="10"
+                android:hint="day"
+                android:inputType="textPersonName"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                tools:ignore="TextFields" />
+
+            <Spinner
+                android:id="@+id/perDays"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <EditText
+                android:id="@+id/perDaysSelect"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_34sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:ems="10"
+                android:hint="Day"
+                android:inputType="textPersonName"
+                android:textColor="@color/blue"
+                android:textSize="@dimen/_10ssp"
+                android:visibility="gone"
+                tools:ignore="TextFields" />
+
+            <Spinner
+                android:id="@+id/yearsOfExperiencePost"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <Spinner
+                android:id="@+id/jobCategory"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <EditText
+                android:id="@+id/jobDescription"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_70sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/edit_text_forget_password"
+                android:ems="10"
+                android:gravity="start"
+                android:hint="300 characters"
+                android:inputType="textPersonName"
+                android:maxLength="300"
+                android:padding="@dimen/_7sdp"
+                android:textSize="@dimen/_10ssp" />
+
+            <Spinner
+                android:id="@+id/paymentSpinner"
+                android:layout_width="@dimen/_230sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_43sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+
+                android:theme="@style/MatchSpinnerTheme" />
+
+            <Button
+                android:id="@+id/CreatePostJob"
+                android:layout_width="@dimen/_160sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_marginStart="@dimen/_84sdp"
+                android:layout_marginTop="@dimen/_20sdp"
+                android:background="@drawable/blue_button"
+                android:text="@string/create_post_job"
+                android:textColor="@color/White" />
+
+            <TextView
+                android:id="@+id/terms"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_74sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_20sdp"
+                android:gravity="center"
+                android:text="@string/i_have_read_the_terms_and_conditions"
+                android:textColor="@color/Green"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.moub.perday">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <application
+        android:name=".App"
+        android:allowBackup="true"
+        android:fullBackupContent="true"
+        android:icon="@drawable/h1"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="false"
+        android:theme="@style/AppTheme"
+        tools:replace="android:supportsRtl">
+        <activity android:name=".ui.employee.associations.AssociationActivity"></activity>
+        <activity android:name=".ui.donationapllied.DonationappliedActivity" />
+        <activity android:name=".ui.acceptapplay.AcceptApplayActivity" />
+        <activity android:name=".ui.donationdetail.DonationDetailActivity" />
+        <activity android:name=".ui.appliedform.AppliedFormActivity" />
+        <activity android:name=".ui.adddonation.AddDonationActivity" />
+        <activity android:name=".ui.phoneVerfiy.OtpActivity" />
+        <activity android:name=".ui.phoneVerfiy.RegisterActivity" />
+        <activity android:name=".ui.employee.main.MainActivity" >
+
+        </activity>
+        <activity android:name=".ui.splash.SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter  android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+
+                <data android:scheme="https" android:host="www.example.com" />
+
+
+            </intent-filter>
+
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyD-izXuflKJ0GGzK4VuB9CHPNwAUZqaO9k" />
+    </application>
+
+</manifest>

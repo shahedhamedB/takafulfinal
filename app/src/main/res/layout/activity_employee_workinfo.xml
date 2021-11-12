@@ -1,0 +1,449 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.employee.employeeWorkInfo.EmployeeWorkinfoActivity">
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_150sdp"
+        android:layout_marginLeft="@dimen/_150sdp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="@dimen/_150sdp"
+        android:layout_marginRight="@dimen/_150sdp"
+        android:text="@string/work_info"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_20ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_13sdp"
+        android:text="@string/fill_your_general_work_information"
+        app:layout_constraintEnd_toEndOf="@+id/textView24"
+        app:layout_constraintStart_toStartOf="@+id/textView24"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <ScrollView
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_450sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@+id/textView27"
+        app:layout_constraintStart_toStartOf="@+id/textView27"
+        app:layout_constraintTop_toBottomOf="@+id/textView27">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_500sdp"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_570sdp">
+
+                <CheckBox
+                    android:id="@+id/allWeeskCheck"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" All week days
+"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView34"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView34"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+                    <CheckBox
+                        android:id="@+id/saturdayCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Saturday "
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout4"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+
+                    <CheckBox
+                        android:id="@+id/wednesdayCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wednesday"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout5"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout5"
+                    app:layout_constraintTop_toTopOf="@+id/linearLayout5">
+
+                    <CheckBox
+                        android:id="@+id/tuesdayCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thursday "
+                        android:textSize="@dimen/_10ssp" />
+
+                    <CheckBox
+                        android:id="@+id/fridayCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Friday"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginLeft="30dp"
+                    android:orientation="vertical"
+                    app:layout_constraintBottom_toBottomOf="@+id/linearLayout4"
+                    app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+                    app:layout_constraintTop_toTopOf="@+id/linearLayout4"
+                    app:layout_constraintVertical_bias="0.0">
+
+                    <CheckBox
+                        android:id="@+id/mondayCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Monday"
+                        android:textSize="@dimen/_10ssp" />
+
+                    <CheckBox
+                        android:id="@+id/tusdayCheckBox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Tuesday"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/educational_level"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.04"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <Spinner
+                    android:id="@+id/educationalLevel"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/gray"
+                    android:theme="@style/MatchSpinnerTheme"
+                    app:layout_constraintEnd_toEndOf="@+id/textView28"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView28"
+                    app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+                <ImageView
+                    android:id="@+id/path"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/educationalLevel"
+                    app:layout_constraintEnd_toEndOf="@+id/educationalLevel"
+                    app:layout_constraintTop_toTopOf="@+id/educationalLevel"
+                    app:srcCompat="@drawable/path"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView29"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:text="@string/recent_job_title"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="@+id/path"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/educationalLevel"
+                    app:layout_constraintTop_toBottomOf="@+id/educationalLevel" />
+
+                <Spinner
+                    android:id="@+id/RecentJob"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/gray"
+                    android:theme="@style/MatchSpinnerTheme"
+                    app:layout_constraintEnd_toEndOf="@+id/path"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/educationalLevel"
+                    app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+                <ImageView
+                    android:id="@+id/pathTow"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/RecentJob"
+                    app:layout_constraintEnd_toEndOf="@+id/RecentJob"
+                    app:layout_constraintTop_toTopOf="@+id/RecentJob"
+                    app:srcCompat="@drawable/path"
+                    tools:ignore="ContentDescription" />
+
+                <TextView
+                    android:id="@+id/textView230"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:text="@string/years_of_experience"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="@+id/RecentJob"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/RecentJob"
+                    app:layout_constraintTop_toBottomOf="@+id/RecentJob" />
+
+                <TextView
+                    android:id="@+id/textView31"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="@string/filed_of_experience"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="@+id/YearsofExperience"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/YearsofExperience"
+                    app:layout_constraintTop_toBottomOf="@+id/YearsofExperience" />
+
+                <TextView
+                    android:id="@+id/textView33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:text="Availability"
+                    android:textColor="@color/blue"
+                    app:layout_constraintEnd_toEndOf="@+id/sRecentJob2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/sRecentJob2"
+                    app:layout_constraintTop_toBottomOf="@+id/sRecentJob2" />
+
+                <Spinner
+                    android:id="@+id/YearsofExperience"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:background="@color/gray"
+                    android:theme="@style/MatchSpinnerTheme"
+                    app:layout_constraintEnd_toEndOf="@+id/textView230"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView230"
+                    app:layout_constraintTop_toBottomOf="@+id/textView230" />
+
+                <LinearLayout
+                    android:id="@+id/sRecentJob2"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_120sdp"
+                    android:layout_marginTop="9dp"
+                    android:background="@color/gray"
+                    android:orientation="vertical"
+                    android:padding="@dimen/_2sdp"
+                    app:layout_constraintEnd_toEndOf="@+id/textView31"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView31"
+                    app:layout_constraintTop_toBottomOf="@+id/textView31">
+
+                    <CheckBox
+                        android:id="@+id/chek1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="Education (Childcare, Teacher, Teaching Assistant, afterschool teaching)"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="InefficientWeight" />
+
+                    <CheckBox
+                        android:id="@+id/check2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="Hotel and Hospitality (Attendant, Housekeeper, Service Worker) "
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="InefficientWeight" />
+
+                    <CheckBox
+                        android:id="@+id/check3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="Restaurant"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="InefficientWeight" />
+
+                    <CheckBox
+                        android:id="@+id/check4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_weight="1"
+                        android:text="Production and Warehouse"
+                        android:textSize="@dimen/_10ssp"
+                        tools:ignore="InefficientWeight" />
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/pathTowtow"
+                    android:layout_width="@dimen/_10sdp"
+                    android:layout_height="@dimen/_10sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:cropToPadding="true"
+                    app:layout_constraintBottom_toBottomOf="@+id/YearsofExperience"
+                    app:layout_constraintEnd_toEndOf="@+id/YearsofExperience"
+                    app:layout_constraintTop_toTopOf="@+id/YearsofExperience"
+                    app:srcCompat="@drawable/path"
+                    tools:ignore="ContentDescription" />
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:orientation="vertical"
+                    app:layout_constraintEnd_toEndOf="@+id/textView34"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView34"
+                    app:layout_constraintTop_toBottomOf="@+id/textView34">
+
+                    <CheckBox
+                        android:id="@+id/sundayCheck"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sunday"
+                        android:textSize="@dimen/_10ssp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/textView34"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginEnd="315dp"
+                    android:layout_marginRight="315dp"
+                    android:text="per week days: "
+                    app:layout_constraintEnd_toEndOf="@+id/textView33"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView33"
+                    app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+                <TextView
+                    android:id="@+id/textView35"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:text="Per day hours"
+                    app:layout_constraintEnd_toEndOf="@+id/linearLayout2"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+                    app:layout_constraintTop_toBottomOf="@+id/linearLayout2" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/numRecycler"
+                    android:layout_width="@dimen/_270sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginRight="16dp"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+                    app:layout_constraintEnd_toEndOf="@+id/textView35"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/textView35"
+                    app:layout_constraintTop_toBottomOf="@+id/textView35"
+                    app:spanCount="2"
+                    tools:listitem="@layout/item_num_hours" />
+
+                <TextView
+                    android:id="@+id/textView45"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginBottom="10dp"
+                    android:text="(you can select up to 8 hours) "
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="@+id/numRecycler"
+                    app:layout_constraintHorizontal_bias="0.0"
+                    app:layout_constraintStart_toStartOf="@+id/numRecycler"
+                    app:layout_constraintTop_toBottomOf="@+id/numRecycler" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/doneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_270sdp"
+        android:layout_marginLeft="@dimen/_270sdp"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_20sdp"
+        android:layout_marginRight="@dimen/_20sdp"
+        android:text="Done"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/_15ssp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

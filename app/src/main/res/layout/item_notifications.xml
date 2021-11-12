@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="@dimen/_290sdp" xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginStart="@dimen/_9sdp"
+        android:id="@+id/itemOnclick"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_height="@dimen/_100sdp">
+
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/ic_dell"
+            tools:src="@drawable/ic_conversation"
+            android:id="@+id/pic_noti_type" tools:ignore="MissingConstraints"
+    />
+    <TextView
+            android:text="You have received a new message"
+            android:textStyle="bold"
+            android:textSize="@dimen/_12ssp"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_height="@dimen/_15sdp" android:id="@+id/txtNotiType"/>
+    <TextView
+            android:text="Quickly answer the question to increase employment"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_40sdp"
+            android:layout_width="@dimen/_190sdp"
+            android:layout_height="@dimen/_28sdp" android:id="@+id/txtAdviceNotiType"/>
+    <TextView
+            android:text="00/00/0000 00:00:00 am"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_90sdp"
+            android:layout_marginTop="@dimen/_70sdp"
+            android:layout_width="@dimen/_190sdp"
+            android:textSize="@dimen/_8ssp"
+            android:layout_height="@dimen/_15sdp" android:id="@+id/timeNoti"/>
+
+</androidx.cardview.widget.CardView>

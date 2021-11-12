@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#000000</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="White">#fff</color>
+    <color name="blue">#000000</color>
+    <color name="blueWhite">#7190A3</color>
+    <color name="gray">#EBEAEA</color>
+    <color name="Green">#51A9A8</color>
+    <color name="Green_lite">#61C4C2</color>
+    <color name="tra">#0061C4C2</color>
+    <color name="home_background">#F2F3F5</color>
+    <color name="black">#000000</color>
+
+
+
+</resources>

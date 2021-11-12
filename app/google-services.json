@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "390484484017",
+    "firebase_url": "https://tkafl-6014c.firebaseio.com",
+    "project_id": "tkafl-6014c",
+    "storage_bucket": "tkafl-6014c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:390484484017:android:49c0ccf216f09713c5e790",
+        "android_client_info": {
+          "package_name": "com.example.tkafl"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "390484484017-duosks4ukun1u8su7c9mp548ue2jvg2c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.tkafl",
+            "certificate_hash": "8d329b15692c6d853de58be1ee9eae86db011158"
+          }
+        },
+        {
+          "client_id": "390484484017-mro503gbiat8g7tk44rnc4adt3oc9ah8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_cKtZ-_KVwKOpdeTVQ0l0Nlkmg1Lvb3E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "390484484017-mro503gbiat8g7tk44rnc4adt3oc9ah8.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

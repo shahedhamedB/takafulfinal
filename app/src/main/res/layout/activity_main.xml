@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.employee.main.MainActivity">
+
+    <fragment
+        android:id="@+id/home_nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_50sdp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/bitch"
+        app:layout_constraintEnd_toEndOf="@+id/appBarLayoutWish"
+        app:layout_constraintStart_toStartOf="@+id/appBarLayoutWish"
+        app:layout_constraintTop_toBottomOf="@+id/appBarLayoutWish"
+        app:navGraph="@navigation/employee_nav" />
+
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_alignParentBottom="true"
+            android:background="#ffffff"
+            app:elevation="@dimen/_8sdp"
+            android:theme="@style/Widget.BottomNavigationView"
+            app:itemIconSize="@dimen/_16sdp"
+            app:itemRippleColor="@color/blue"
+            app:labelVisibilityMode="labeled"
+            app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:menu="@menu/menu_home_emloyee" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

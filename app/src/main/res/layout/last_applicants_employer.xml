@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                   xmlns:tools="http://schemas.android.com/tools"
+                                   android:orientation="vertical"
+                                   android:layout_width="match_parent"
+                                   android:id="@+id/carViewApplicants23"
+                                   android:layout_marginTop="@dimen/_5sdp"
+                                   android:layout_height="@dimen/_130sdp">
+    <TextView
+            android:text="Employee Name"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:textSize="@dimen/_13ssp"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:id="@+id/EmployeeName23"
+    />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="@dimen/_40sdp"
+            android:layout_height="@dimen/_40sdp"
+            app:srcCompat="@drawable/ic_user"
+            android:id="@+id/EmployeePhoto23"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/ic_user"
+            tools:src="@drawable/ic_user"
+             tools:ignore="MissingConstraints"
+    />
+    <TextView
+            android:text="Experiance"
+            android:textColor="@color/blue"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_42sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/ExperianceApplicants23"
+    />
+    <ImageView
+            android:layout_width="@dimen/_15sdp"
+            android:layout_height="@dimen/_15sdp"
+            android:layout_marginStart="@dimen/_170sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            app:srcCompat="@drawable/ic_star_black_24dp"
+            android:id="@+id/imageView172"
+            tools:ignore="VectorDrawableCompat"
+    />
+    <TextView
+            android:text="5"
+            android:layout_marginStart="@dimen/_187sdp"
+            android:layout_marginTop="@dimen/_23sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/rate23"
+    />
+    <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            app:srcCompat="@drawable/ic_place"
+            android:layout_marginTop="@dimen/_103sdp"
+            android:layout_marginStart="@dimen/_210sdp"
+            android:id="@+id/imageView1823"
+            tools:ignore="VectorDrawableCompat"
+    />
+    <TextView
+            android:text="Dubai"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_225sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/EmployeeLocation23"
+    />
+    <ImageView
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_65sdp"
+            app:srcCompat="@drawable/ic_clock"
+            android:id="@+id/imageView1923"
+            tools:ignore="VectorDrawableCompat"
+    />
+    <TextView
+            android:text="Full time, Part time"
+            android:layout_marginTop="@dimen/_80sdp"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:layout_width="@dimen/_250sdp"
+            android:layout_height="@dimen/_20sdp" android:id="@+id/workTimeEmployee23"
+    />
+    <TextView
+            android:text="yesterday"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_100sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/time23"
+    />
+
+    <View android:layout_width="@dimen/_230sdp"
+          android:layout_height="@dimen/_1sdp"
+          android:background="@color/gray"
+          android:layout_marginStart="@dimen/_60sdp"
+          android:layout_marginTop="@dimen/_125sdp"
+
+    />
+    <ImageView
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_280sdp"
+            android:layout_width="@dimen/_10sdp"
+            android:layout_height="@dimen/_15sdp" app:srcCompat="@drawable/points" android:id="@+id/settings23"
+    />
+    <TextView
+            android:text="Times are available"
+            android:textStyle="bold"
+            android:layout_marginStart="@dimen/_80sdp"
+            android:layout_marginTop="@dimen/_62sdp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/textView58"/>
+</androidx.cardview.widget.CardView>

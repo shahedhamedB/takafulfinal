@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+             xmlns:tools="http://schemas.android.com/tools"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+             tools:context=".ui.employer.applicants.newApplicants.NewApplicants">
+    <LinearLayout android:layout_width="match_parent"
+                  android:orientation="vertical"
+                  android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/noti_empty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/_60sdp"
+            android:layout_gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imageView41"
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_100sdp"
+                app:srcCompat="@drawable/ic_hat" />
+
+            <TextView
+                android:id="@+id/textView89"
+                android:layout_width="@dimen/_240sdp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textSize="@dimen/_17ssp"
+                android:textColor="@color/primary_dark"
+                android:text="You have never employed any employee before" />
+
+            <TextView
+                android:id="@+id/textView93"
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="We wish you a happy experience" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/newApplicantsEmployerRecyclerView"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        />
+        <androidx.recyclerview.widget.RecyclerView
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/testadapter"
+                app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        />
+    </LinearLayout>
+
+
+</FrameLayout>

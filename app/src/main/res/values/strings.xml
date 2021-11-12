@@ -1,0 +1,381 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">تعاون</string>
+    <string name="username_error">Username cannot be empty</string>
+    <string name="email_error">Email cannot be empty</string>
+    <string name="password_error">Password cannot be empty</string>
+    <string name="name_error">Name cannot be empty</string>
+    <string name="navigate_home">Welcome to my club</string>
+    <string name="user_name">User name</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="login">Login ?</string>
+    <string name="have_an_account">have an account, </string>
+    <string name="by_continue_you_agreed">by continue you agreed</string>
+    <string name="privacy_policy">privacy policy</string>
+    <string name="let_s_confirm_your_email">Let‘s confirm your email</string>
+    <string name="just_click_the_link_in_the_email_we_sent_you">Just click the link in the email we sent you</string>
+    <string name="email">Email</string>
+    <string name="resend_email">Resend email</string>
+    <string name="sign_out">sign out</string>
+    <string name="verify">Verify</string>
+    <string name="to_reset_your_password">to reset your password</string>
+    <string name="please_provide_your_registration_email">Please provide your registration email</string>
+    <string name="personal_info">Personal info</string>
+    <string name="fill_your_general_contact_information">Fill your general contact information</string>
+    <string name="current_location">Current location</string>
+    <string name="location">Location</string>
+    <string name="language">language</string>
+    <string name="male">Male</string>
+    <string name="gender">Gender</string>
+    <string name="female">Female</string>
+    <string name="maretal_status">Maretal status</string>
+    <string name="health_condition">Health condition</string>
+    <string name="family_size">Family size</string>
+    <string name="skip">Skip</string>
+    <string name="next">Next</string>
+    <string name="child_headed_households">Child headed households</string>
+    <string name="women_headed_households">Women headed households</string>
+    <string name="chronically_ill">Chronically ill</string>
+    <string name="family_with_elderly_or_person_s_with_disabilities">Family with elderly or person(s) with
+        disabilities
+    </string>
+    <string name="work_info">Work info</string>
+    <string name="fill_your_general_work_information">Fill your general Work information</string>
+    <string name="educational_level">Educational level</string>
+    <string name="recent_job_title">Recent job title</string>
+    <string name="years_of_experience">Years of experience</string>
+    <string name="filed_of_experience">Filed of experience</string>
+    <string name="let_s_find_a_job_for_you">Let‘s Find a job for you</string>
+    <string name="great_to_meet_you">Great to meet you</string>
+    <string-array name="language">
+        <item>Please Choose Language</item>
+        <item>* English</item>
+        <item>* Arabic</item>
+
+    </string-array>
+
+    <string-array name="material">
+        <item>Please select your material</item>
+        <item>Never Married</item>
+        <item>Married</item>
+        <item>Separated/Divorced</item>
+        <item>Widowed</item>
+        <item>Prefer not to declare</item>
+    </string-array>
+
+    <string-array name="helth">
+        <item>please select helth status</item>
+        <item>No disability</item>
+        <item>Disability</item>
+        <item>Prefer not to declare</item>
+    </string-array>
+    <string-array name="familySize">
+        <item>familySize</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>more than 6</item>
+    </string-array>
+    <string-array name="familyWork" tools:ignore="ExtraTranslation">
+        <item>familyWork</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>more than 3</item>
+    </string-array>
+    <string-array name="Educationallevel" tools:ignore="ExtraTranslation">
+        <item>Diploma, Bachelor, or more</item>
+        <item>Middle or Secondary School</item>
+        <item>Elementary School</item>
+        <item>Cannot read</item>
+    </string-array>
+    <string-array name="YearsofExperience" tools:ignore="ExtraTranslation">
+        <item>Less than 1 year</item>
+        <item>1 to 3 years</item>
+        <item>4 to 6 years</item>
+        <item>More than 6 years</item>
+    </string-array>
+
+    <string-array name="EmployerStatus" tools:ignore="ExtraTranslation">
+        <item>Organization</item>
+        <item>Company</item>
+        <item>Individual</item>
+    </string-array>
+
+    <string-array name="numberHours" tools:ignore="ExtraTranslation">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>22</item>
+        <item>23</item>
+        <item>24</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="the_business_that_you_have_in">The works that you have in :</string>
+    <string name="find_a_job">Find a job</string>
+    <string name="joubs_found">joubs found</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_share">Share</string>
+    <string name="questions">Questions</string>
+    <string name="settings">Settings</string>
+    <string name="notifications">Notifications</string>
+    <string name="profile">Profile</string>
+    <string name="please_choose_your_company_type">Please choose your company type :</string>
+    <string name="look_for_the_right_candidates_without_reviewing_many_requests_by_filling_in_the_information">Look for
+        the right candidates without reviewing many requests by filling in the information
+    </string>
+    <string name="number_of_workers">Number of workers</string>
+    <string name="job_title">Job title</string>
+    <string name="i_have_read_the_terms_and_conditions">I have read the Terms and Conditions .</string>
+    <string name="create_post_job">create post job</string>
+    <string name="this_is_the_approval_of_the_terms_and_conditions">This is the approval of the terms and conditions
+    </string>
+    <string name="save_comapny_info">Save Comapny Info</string>
+    <string name="no_personal_information_other_than_the_question_will_be_shared">No personal information other than the
+        question will be shared
+    </string>
+    <string name="answers">Answers</string>
+    <string name="ask">Ask</string>
+    <string name="write_your_question">Write your question</string>
+    <string name="ask_the_employee_ahmad_al_qaisi">Ask the employee Ahmad al-Qaisi</string>
+    <string name="new_posts">New Posts</string>
+    <string name="last_posts">Last Posts</string>
+    <string name="applied_new">Applied</string>
+    <string name="social_public">Social Public</string>
+    <string name="invitations">Invitations</string>
+    <string name="phone_empty_error">phone_empty_error</string>
+    <string name="phone_invalid_error">phone_invalid_error</string>
+    <string name="city_empty_error">city empty</string>
+    <string name="categories_empty_error">categories error</string>
+    <string name="image_empty_error">image error</string>
+    <string name="description_empty_error">description empty</string>
+    <string name="add_successful">add successful</string>
+    <string name="passport_empty_error">passport empty</string>
+
+    <string-array name="cities">
+        <item>عمان</item>
+        <item>الزرقاء</item>
+        <item>اربد</item>
+        <item>عجلون</item>
+        <item>العقبة</item>
+        <item>المفرق</item>
+        <item>مادبا</item>
+        <item>البلقاء</item>
+        <item>الكرك</item>
+        <item>معان</item>
+        <item>الطفيلة</item>
+    </string-array>
+    <string-array name="category">
+        <item>دواء</item>
+        <item>ملابس</item>
+        <item>اجهزة كهربائية</item>
+        <item>اموال</item>
+
+    </string-array>
+
+    <string-array name="educationalLevel" tools:ignore="ExtraTranslation">
+        <item>Choose the educational level</item>
+        <item>Bachelor or more</item>
+        <item>Diploma</item>
+        <item>Secondary School</item>
+        <item>Middle School</item>
+        <item>Elementary School</item>
+        <item>Cannot read</item>
+    </string-array>
+
+    <string-array name="perWeek" tools:ignore="ExtraTranslation">
+        <item>Choose working days</item>
+        <item>per week days</item>
+        <item>All week days</item>
+        <item>All week days except weekend</item>
+        <item>Only in the weekend</item>
+        <item>Specific days</item>
+    </string-array>
+    <string-array name="perDay" tools:ignore="ExtraTranslation">
+        <item>Choose working hours</item>
+        <item>* Any time</item>
+        <item>* Daytime</item>
+        <item>* Evening time</item>
+        <item>* Specific time</item>
+    </string-array>
+    <string-array name="experienceNeeded" tools:ignore="ExtraTranslation">
+        <item>Choose the experience needed</item>
+        <item>No experience needed</item>
+        <item>Less than 1 year</item>
+        <item>1 to 3 years</item>
+        <item>4 to 6 years</item>
+        <item>More than 6 years</item>
+    </string-array>
+
+    <string-array name="jobCategoryPost" tools:ignore="ExtraTranslation">
+        <item>Choose the job category</item>
+        <item>* Not Necessary</item>
+        <item>* Education </item>
+        <item>* Health and Beauty
+        </item>
+        <item>* Humanitarian Aid
+        </item>
+        <item>* Automotive </item>
+        <item>* Construction and Maintenance
+        </item>
+        <item>* Office Services
+        </item>
+        <item>* Personal Services</item>
+        <item>* Hotel and Hospitality </item>
+        <item>* Restaurant</item>
+        <item>* Stores and Marketing
+        </item>
+        <item>* Agriculture (farming)</item>
+        <item>* Production and Warehouse</item>
+        <item>* Other</item>
+
+    </string-array>
+
+    <string-array name="payment" tools:ignore="ExtraTranslation">
+        <item>Choose the payment schedule</item>
+        <item>* Daily</item>
+        <item>* Hourly</item>
+        <item>* Weekly</item>
+        <item>* Monthly</item>
+    </string-array>
+
+    <string-array name="day" tools:ignore="ExtraTranslation">
+        <item>day</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+        <item>18</item>
+        <item>19</item>
+        <item>20</item>
+        <item>21</item>
+        <item>23</item>
+        <item>24</item>
+        <item>25</item>
+        <item>26</item>
+        <item>27</item>
+        <item>28</item>
+        <item>29</item>
+        <item>30</item>
+        <item>31</item>
+    </string-array>
+    <string-array name="month" tools:ignore="ExtraTranslation">
+        <item>month</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="year" tools:ignore="ExtraTranslation">
+        <item>Year</item>
+        <item>1961</item>
+        <item>1962</item>
+        <item>1963</item>
+        <item>1964</item>
+        <item>1965</item>
+        <item>1966</item>
+        <item>1967</item>
+        <item>1968</item>
+        <item>1969</item>
+        <item>1970</item>
+        <item>1971</item>
+        <item>1972</item>
+        <item>1973</item>
+        <item>1974</item>
+        <item>1975</item>
+        <item>1976</item>
+        <item>1977</item>
+        <item>1978</item>
+        <item>1979</item>
+        <item>1980</item>
+        <item>1981</item>
+        <item>1982</item>
+        <item>1983</item>
+        <item>1984</item>
+        <item>1985</item>
+        <item>1986</item>
+        <item>1987</item>
+        <item>1988</item>
+        <item>1989</item>
+        <item>1990</item>
+        <item>1991</item>
+        <item>1992</item>
+        <item>1993</item>
+        <item>1994</item>
+        <item>1995</item>
+        <item>1996</item>
+        <item>1997</item>
+        <item>1998</item>
+        <item>1999</item>
+        <item>2000</item>
+        <item>2001</item>
+        <item>2002</item>
+        <item>2003</item>
+        <item>2004</item>
+        <item>2005</item>
+        <item>2006</item>
+        <item>2007</item>
+        <item>2008</item>
+        <item>2009</item>
+        <item>2010</item>
+        <item>2011</item>
+        <item>2012</item>
+        <item>2013</item>
+        <item>2014</item>
+        <item>2015</item>
+        <item>2016</item>
+        <item>2018</item>
+        <item>2019</item>
+    </string-array>
+
+
+</resources>
